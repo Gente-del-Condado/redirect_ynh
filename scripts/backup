@@ -9,7 +9,7 @@ source /usr/share/yunohost/helpers
 ynh_backup "/etc/nginx/conf.d/${domain}.d/${app}.conf"
 
 #=================================================
-# END OF SCRIPT
+# FIN DEL SCRIPT
 #=================================================
 
 ynh_print_info "Script de copia de seguridad completado para $app. (Yunohost entonces copiará esos archivos al archivo)."
