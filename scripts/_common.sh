@@ -5,12 +5,12 @@ URL_REGEX_SECURE='^(http://(127\.[0-9]+\.[0-9]+\.[0-9]+|localhost)|https://.*)(:
 
 _validate_redirect_uri() {
     if [[ ! $target =~ $URL_REGEX_VALID ]]; then
-        ynh_die "Invalid destination: $target" 1
+        ynh_die "Destino no válido: $target" 1
     fi
 
-    # Avoid uncrypted remote destination with reverse proxy mode
-    # Indeed the SSO send the password in all requests in HTTP headers
+    # Evite el destino remoto incrustado con el modo de proxy inverso
+    # De hecho, el SSO envía la contraseña en todas las solicitudes en encabezados HTTP
     if [[ "$redirect_type" = "reverseproxy" ]] && [[ ! $target =~ $URL_REGEX_SECURE ]]; then
-        ynh_print_warn "Reverseproxying using cleartext HTTP to a possibly external machine ($target) is insecure ... please be super careful about this."
+        ynh_print_warn "Proxy inverso usando ClearText HTTP a una máquina posiblemente externa ($target) es inseguro ... tenga mucho cuidado con esto."
     fi
 }
