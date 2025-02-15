@@ -3,13 +3,13 @@
 source /usr/share/yunohost/helpers
 
 #=================================================
-# REMOVE NGINX CONFIGURATION
+# ELIMINANDO LA CONFIGURACION DE Nginx
 #=================================================
 
 ynh_config_remove_nginx
 
 #=================================================
-# END OF SCRIPT
+# FIN DEL SCRIPT
 #=================================================
 
-ynh_script_progression "Removal of $app completed"
+ynh_script_progression "Eliminación de $app completa"
