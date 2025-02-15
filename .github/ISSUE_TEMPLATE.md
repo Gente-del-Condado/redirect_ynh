@@ -1,55 +1,55 @@
 ---
 name: Bug report
-about: When creating a bug report, please use the following template to provide all the relevant information and help debugging efficiently.
+about: Al crear un informe de errores, utilice la siguiente plantilla para proporcionar toda la información relevante y ayudar a la depuración de manera eficiente.
 
 ---
 
-**How to post a meaningful bug report**
-1. *Read this whole template first.*
-2. *Determine if you are on the right place:*
-   - *If you were performing an action on the app from the webadmin or the CLI (install, update, backup, restore, change_url...), you are on the right place!*
-   - *Otherwise, the issue may be due to the app itself. Refer to its documentation or repository for help.*
-   - *When in doubt, post here and we will figure it out together.*
-3. *Delete the italic comments as you write over them below, and remove this guide.*
+**Cómo publicar un informe de error significativo**
+1. *Lea primero esta plantilla completa.*
+2. *Determine si está en el lugar correcto:*
+   - *Si estuviera realizando una acción en la aplicación desde WebAdmin o la CLI (instalar, actualizar, hacer copias de seguridad, restaurar, cambiar_url ...), ¡está en el lugar correcto!*
+   - *De lo contrario, el problema puede deberse a la aplicación en sí. Consulte su documentación o repositorio para obtener ayuda.*
+   - *En caso de duda, publique aquí y lo resolveremos juntos.*
+3. *Elimine los comentarios en cursiva mientras escribe sobre ellos a continuación y elimina esta guía.*
 --- 
 
-### Describe the bug
+### Describe el error
 
-*A clear and concise description of what the bug is.*
+*Una descripción clara y concisa de lo que es el error.*
 
 ### Context
 
 - Hardware: *VPS bought online / Old laptop or computer / Raspberry Pi at home / Internet Cube with VPN / Other ARM board / ...*
 - YunoHost version: x.x.x
-- I have access to my server: *Through SSH | through the webadmin | direct access via keyboard / screen | ...*
-- Are you in a special context or did you perform some particular tweaking on your YunoHost instance?: *no / yes*
-  - If yes, please explain:
-- Using, or trying to install package version/branch:
-- If upgrading, current package version: *can be found in the admin, or with `yunohost app info $app_id`*
+- Tengo acceso a mi servidor: *Through SSH | through the webadmin | direct access via keyboard / screen | ...*
+- ¿Estás en un contexto especial o realizaste algunos ajustes particulares en tu instancia de Yunohost?: *no / si*
+  - Si es así, explique:
+- Usar o intentar instalar la versión/rama del paquete:
+- Si se actualiza, la versión actual del paquete: *se puede encontrar en el administrador o con `yunohost app info $app_id`*
 
-### Steps to reproduce
+### Pasos para reproducir
 
-- *If you performed a command from the CLI, the command itself is enough. For example:*
+- *Si realizó un comando desde la CLI, el comando en sí es suficiente. Por ejemplo::*
     ```sh
     sudo yunohost app install the_app
     ```
 - *If you used the webadmin, please perform the equivalent command from the CLI first.*
 - *If the error occurs in your browser, explain what you did:*
-   1. *Go to '...'*
-   2. *Click on '...'*
-   3. *Scroll down to '...'*
-   4. *See error*
+   1. *Ir a '...'*
+   2. *Hacer clic en'...'*
+   3. *Desplazarse hacia abajo a '...'*
+   4. *Ver error*
 
 ### Expected behavior
 
-*A clear and concise description of what you expected to happen. You can remove this section if the command above is enough to understand your intent.*
+*Una descripción clara y concisa de lo que esperaba que sucediera. Puede eliminar esta sección si el comando anterior es suficiente para comprender su intención.*
 
 ### Logs
 
-*When an operation fails, YunoHost provides a simple way to share the logs.*
-- *In the webadmin, the error message contains a link to the relevant log page. On that page, you will be able to 'Share with Yunopaste'. If you missed it, the logs of previous operations are also available under Tools > Logs.*
-- *In command line, the command to share the logs is displayed at the end of the operation and looks like `yunohost log display [log name] --share`. If you missed it, you can find the log ID of a previous operation using `yunohost log list`.*
+*Cuando falla una operación, Yunohost proporciona una forma simple de compartir los registros.*
+- *En WebAdmin, el mensaje de error contiene un enlace a la página de registro relevante. En esa página, podrá 'compartir con yunopaste'. Si se lo perdió, los registros de operaciones anteriores también están disponibles en herramientas> registros.*
+- *En la línea de comando, el comando para compartir los registros se muestra al final de la operación y parece `yunohost log display [log name] --share`. Si se lo perdió, puede encontrar la ID de registro de una operación anterior utilizando`yunohost log list`.*
 
-*After sharing the log, please copypaste directly the link provided by YunoHost (to help readability, no need to copypaste the entire content of the log here, just the link is enough...)*
+*Después de compartir el registro, copyPaste directamente el enlace proporcionado por YunoHost (para ayudar a la legibilidad, no es necesario copipir todo el contenido del registro aquí, solo el enlace es suficiente ...)*
 
-*If applicable and useful, add screenshots to help explain your problem.*
+*Si corresponde y es útil, agregue capturas de pantalla para ayudar a explicar su problema.*
