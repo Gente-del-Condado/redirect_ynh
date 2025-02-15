@@ -1,16 +1,16 @@
-## Problem
+## Problema
 
-- *Description of why you made this PR*
+- *Descripción de por qué hiciste este PR*
 
-## Solution
+## Solución
 
-- *And how do you fix that problem*
+- *¿Y cómo solucionas ese problema?*
 
 ## PR Status
 
-- [ ] Code finished and ready to be reviewed/tested
-- [ ] The fix/enhancement were manually tested (if applicable)
+- [ ] Código terminado y listo para ser revisado/probado
+- [ ] La solución/mejora se probó manualmente (si corresponde)
 
-## Automatic tests
+## Pruebas automáticas
 
-Automatic tests can be triggered on https://ci-apps-dev.yunohost.org/ *after creating the PR*, by commenting "!testme", "!gogogadgetoci" or "By the power of systemd, I invoke The Great App CI to test this Pull Request!". (N.B. : for this to work you need to be a member of the Yunohost-Apps organization)
+Las pruebas automáticas se pueden activar en https://ci-apps-dev.yunohost.org/ *after creating the PR*, by commenting "!testme", "!gogogadgetoci" or "¡Por el poder de Systemd, invoco la excelente aplicación CI para probar esta solicitud de extracción!". (N.B. : Para que esto funcione, debe ser miembro de la organización Yunohost-Apps)
