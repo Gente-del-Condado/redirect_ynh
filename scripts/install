@@ -6,15 +6,15 @@ source /usr/share/yunohost/helpers
 _validate_redirect_uri
 
 #=================================================
-# CONFIGURE NGINX
+# CONFIGURANDO NGINX
 #=================================================
-ynh_script_progression "Configuring NGINX web server..."
+ynh_script_progression "Configuración del servidor web Nginx..."
 
 mv ../conf/{"nginx-$redirect_type.conf",nginx.conf}
 ynh_config_add_nginx
 
 #=================================================
-# END OF SCRIPT
+# FIN DEL SCRIPT
 #=================================================
 
-ynh_script_progression "Installation of $app completed"
+ynh_script_progression "Instalación de $app completa"
