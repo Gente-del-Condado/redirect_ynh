@@ -5,11 +5,11 @@ source /usr/share/yunohost/helpers
 
 ynh_restore "/etc/nginx/conf.d/${domain}.d/${app}.conf"
 
-ynh_script_progression "Reloading NGINX web server..."
+ynh_script_progression "Recarga el servidor web Nginx..."
 ynh_systemctl --service=nginx --action=reload
 
 #=================================================
-# END OF SCRIPT
+# FIN DEL SCRIPT
 #=================================================
 
-ynh_script_progression "Restoration completed for $app"
+ynh_script_progression "Restauración completada para $app"
