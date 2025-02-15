@@ -4,15 +4,15 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# MODIFY URL IN NGINX CONF
+# Modificar URL en nginx conf
 #=================================================
-ynh_script_progression "Updating NGINX web server configuration..."
+ynh_script_progression "Actualización de la configuración del servidor web NGINX..."
 
 mv ../conf/{"nginx-$redirect_type.conf",nginx.conf}
 ynh_config_change_url_nginx
 
 #=================================================
-# END OF SCRIPT
+# Fin del SCRIPT
 #=================================================
 
-ynh_script_progression "Change of URL completed for $app"
+ynh_script_progression "Cambio de URL completado para $app"
