@@ -4,7 +4,7 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# ENSURE DOWNWARD COMPATIBILITY
+# ASEGURAR LA COMPATIBILIDAD DESCENDENTE
 #=================================================
 
 if [[ "${redirect_type:-}" == *"proxy"* ]]; then
@@ -21,11 +21,11 @@ if [[ -z "${target:-}" ]] && [[ -n "${redirect_path:-}" ]]; then
 fi
 
 #=================================================
-# CONFIGURE NGINX
+# CONFIGURACION NGINX
 #=================================================
-ynh_script_progression "Configuring NGINX web server..."
+ynh_script_progression "Configuración del servidor web Nginx..."
 
 mv ../conf/{nginx-$redirect_type.conf,nginx.conf}
 ynh_config_add_nginx
 
-ynh_script_progression "Upgrade of $app completed"
+ynh_script_progression "Actualización de $app completa"
