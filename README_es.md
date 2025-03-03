@@ -19,8 +19,8 @@ No se debe editar a mano.
 This application allows to integrate a custom tile in YunoHost's user portal.
 
 There two typical use cases are covered:
-- **basic, explicit redirection** : this is a "virtual" app tile that just redirects to another url or external website using HTTP code 302
-- **reverse-proxy** : create an app tile to expose an app listening on a specific port, typically something that you manually installed (with or without Docker) locally or on another machine.
+- **Redirección básica y explícita**: Esta es un mosaico de aplicaciones "virtual" que solo redirige a otra URL o sitio web externo utilizando el código HTTP 302
+- **PROXIO-REVERSO**: Cree una mosaico de aplicaciones para exponer una aplicación que escucha en un puerto específico, generalmente algo que instaló manualmente (con o sin Docker) localmente o en otra máquina.
 
 
 **Versión actual:** 2.1~ynh1
